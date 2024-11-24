@@ -4,14 +4,14 @@
     font-family: sans-serif;
 }
 
-.card{
+.form-container{
     width: 350px;
     padding: 20px;
     background-color: #eee;
     margin: 20px auto;
     border-radius: 8px;
 }
-.card .c-file{
+.form-container .c-file{
     background-color: #bbb;
     height: 200px;
     border-radius: 8px;
@@ -21,12 +21,12 @@
     justify-content: center;
     display: flex;
 }
-.card .c-input{
+.form-container .c-input{
     background-color: #bbb;
     border-radius: 8px;
     padding: 20px;
 }
-.card .c-input input{
+.form-container .c-input input{
     width: 90%;
     height: 40px;
     margin-bottom: 15px;
@@ -34,24 +34,31 @@
     border: none;
     padding: 0 10px;
 }
-.card .c-input button{
+.form-container .c-input button{
     width: 96%;
-    height: 30px;
+    height: 40px;
     border-radius: 4px;
 }
-table{
-  margin: 10px auto;  
-}
-table th,td{
-    border: 1px solid;
-    padding: 6px 20px;
-}
-table tr td a img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 2px black;
-}
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    .form-container {
+      margin-bottom: 20px;
+    }
+
 #image{
   width: 40px;
   height: 40px;
@@ -59,12 +66,28 @@ table tr td a img{
   box-shadow: 1px 1px 2px black;
 }
 #up{
-    background-color: rgb(190, 64, 64);
+    background-color: #52DBAD;
     color: white;
     cursor: pointer;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
 }
 #del{
-    background-color: rgb(64, 190, 98);
+    background-color: #DB6152;
     color: white;
     cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+#bx{
+  color: #fff;
+  font-size: 100px;
 }
