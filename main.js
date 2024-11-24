@@ -69,8 +69,12 @@ function showdata(){
        </td>
        <td> ${data[i].ref} </td>
        <td> ${data[i].nam}</td> 
-       <td id='del'onclick='delet(${ i })'> delete</td> 
-       <td id='up' onclick=update(${ i })> update</td> 
+       <td id='del'onclick='delet(${ i })'> 
+       <i class='bx bxs-trash'></i>
+        </td> 
+       <td id='up' onclick=update(${ i })> 
+        <i class='bx bxs-edit'></i>
+       </td> 
     </tr>`;
    
     }
