@@ -8,7 +8,7 @@ let mode = 'create';
 let tmp; 
 let tm;
 
-let data ;
+let data = [];
 if(localStorage.localprod != null){
     data = JSON.parse(localStorage.localprod);
 }
